@@ -1,0 +1,29 @@
+void insertionSort(const char *data[]) {
+//	TODO
+	int k = 0, ascii, previousAscii, counter = 0, forIndex;
+	const char *current;
+
+	while(data[counter] != nullptr) counter++;
+
+	for(forIndex = 0;forIndex < counter;forIndex++){
+		current = data[forIndex];
+    	size_t j = forIndex;
+    	
+		while(j > 0){
+			ascii = (int)(current[k]);
+			previousAscii = (int)(data[j-1][k]);
+
+			while((ascii == previousAscii) && (ascii != '\n' || previousAscii != '\n' )){
+				k++;
+				ascii = (int)(current[k]);
+				previousAscii = (int)(data[j-1][k]);
+			} 
+    		
+			if(ascii <= previousAscii) break;
+			data[j] = data[j-1];
+			--j;
+		}
+		data[j] = current;
+		k = 0;
+	}
+}

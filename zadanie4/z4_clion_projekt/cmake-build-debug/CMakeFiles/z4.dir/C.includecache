@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/data.h
+
+../include/rng.h
+
+C:/Users/Legion/Desktop/Feika/II. semester/Prog2/zadanie4/z4_clion_projekt/src/z4.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+data.h
+C:/Users/Legion/Desktop/Feika/II. semester/Prog2/zadanie4/z4_clion_projekt/src/data.h
+rng.h
+C:/Users/Legion/Desktop/Feika/II. semester/Prog2/zadanie4/z4_clion_projekt/src/rng.h
+

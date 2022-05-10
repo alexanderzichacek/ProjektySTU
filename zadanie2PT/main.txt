@@ -1,0 +1,41 @@
+	List *list = new List;
+	list->first = nullptr;
+	
+//	List *list2 = new List;
+//	list2->first = nullptr;
+//	appendNode(list2, 1);
+//	appendNode(list2, 2);
+//	appendNode(list2, 3);
+//	appendNode(list2, 4);
+	
+	// 1. uloha pridat na koniec
+	appendNode(list, 1);
+	printList(list);
+//	// 2. uloha
+	
+	// 3. uloha vlozit
+	insertNode(list, 2);printList(list);
+	insertNode(list, 7);printList(list);
+	insertNode(list, 6);printList(list);
+	insertNode(list, 8);
+	
+	printList(list);printListAdress(list);
+
+//	// 4. uloha
+//	printList(joinLists(list,list2));
+
+//	// 5. uloha remove last
+//	removeLastNode(list);
+//	printList(list);
+	
+//	// 6. uloha palindrom
+//	std::cout << "Palindrom " << isPalindrome(list)<< std::endl;
+	
+//	// 7. uloha sucet
+//	std::cout << "Sucet: " << sumNodes(list, 3) << std::endl;
+	
+//	// 9. uloha deep copy
+//	std::cout << "Deep: " << deepCopyList(list) << std::endl;
+	 
+//	// 10. uloha najst adresu posledneho zadaneho
+//	std::cout << "Posledna adresa: " << findLastNodeOccurrence(list, 6);

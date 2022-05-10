@@ -1,0 +1,37 @@
+ 
+    Position positions;
+    Date datum; 
+    
+	positions.x = 10;
+	positions.y = 20;
+	
+	print(&positions);	//ULOHA 1
+	
+	std::cout << std::endl;
+	positions.x = -12345;
+	positions.y = 2;
+	
+	print(positions);	//ULOHA 2
+
+	std::cout << std::endl;
+	readFromStandardInput(&positions);	// ULOHA 3
+	std::cout << "Kontrola ulohy 3: ";	
+	print(positions);std::cout << std::endl;
+	
+	std::cout << "Pocet znakov, potrebnych pre textovu reprezentaciu hodnoty -236 je: " << numDigits(-0); // ULOHA 5
+	
+	datum.day = 29;
+	datum.month = 2;
+	datum.year = 2005;
+	
+	std::cout << std::endl;
+	print(&datum, "Pisomka bude D. M. Y, v miestnosti BC 300");	// ULOHA 6
+	
+	
+	std::cout << std::endl;
+	if(isInLeapYear(&datum) == true)	std::cout << "Rok je priestupny";	
+	else std::cout << "Rok nie je priestupny";	// ULOHA 9
+	
+	std::cout << std::endl;
+	if(isValid(&datum) == true)	std::cout << "Datum je platny";	
+	else std::cout << "Datum nie je platny";	// ULOHA 10

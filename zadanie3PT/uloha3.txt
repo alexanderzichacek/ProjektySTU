@@ -1,0 +1,21 @@
+Node *sorted, *current = list->first, *next, *temporary;
+    while(current != nullptr){
+        next = current;
+        current = current->next;
+		if(sorted == nullptr || sorted->data <= next->data){
+            next->next = sorted;
+            sorted = next;
+        }
+        else{
+			temporary = sorted;
+			while(temporary != nullptr){
+				if(temporary->next == nullptr || temporary->next->data <= next->data){
+					next->next = temporary->next;
+					temporary->next = next;
+					break;
+				}
+				temporary = temporary->next;
+			}
+		}
+    }  
+	list->first = sorted; 

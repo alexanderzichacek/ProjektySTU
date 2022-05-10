@@ -1,0 +1,45 @@
+	std::cout << "insertion sort" << std::endl;
+    int d1[] = {5, 2, 1, 10, 8, 7, 5};
+    
+//    const char *d2[] = {"Juraj", "Peter", "Andrej", nullptr};
+//    const char *d2[] = {"Juraj", "Anabela", "Peter", "Andrej", nullptr};
+//    const char *d2[] = {"Andrej", "Juraj", "Andrej", nullptr};
+    const char *d2[] = {"Andrej", "Anabela", "Peter", "Juraj", "Fero", "Matus", "Miroslav", "Jozef", "Andrea", nullptr};
+
+//	ULOHA 1
+	println("d1 povod", d1, LENGTH(d1));
+	insertionSort(d1, LENGTH(d1));
+    println("d1 potom", d1, LENGTH(d1));
+    
+//	ULOHA 2
+	int i = 0;
+	std::cout << "POLE CHAR POVOD: ";
+	while(d2[i] != nullptr){
+    	std::cout << d2[i] << " ";
+		i++;
+	}
+    std::cout << std::endl;
+    insertionSort(d2);
+    i = 0;
+    std::cout << "POLE CHAR POTOM: ";
+	while(d2[i] != nullptr){
+    	std::cout << d2[i] << " ";
+		i++;
+	}
+    std::cout << std::endl;
+    
+//	ULOHA 3
+	List *list = new List;
+	list->first = nullptr;
+	appendNode(list, 1);
+	appendNode(list, 5);
+	appendNode(list, 3);
+	printList(list);
+	insertionSort(list);
+	printList(list);  
+	  
+//	ULOHA 4
+    test_merge();
+
+//	ULOHA 5	
+	test_mergeSortTopDown();
