@@ -1,0 +1,6 @@
+sk\stuba\fei\uim\oop\assignment3\list\data\ListRepository.class
+sk\stuba\fei\uim\oop\assignment3\list\web\body\ListResponse.class
+sk\stuba\fei\uim\oop\assignment3\list\web\body\ListRequest.class
+sk\stuba\fei\uim\oop\assignment3\list\web\ListController.class
+sk\stuba\fei\uim\oop\assignment3\list\logic\IListServices.class
+sk\stuba\fei\uim\oop\assignment3\list\logic\ListServices.class

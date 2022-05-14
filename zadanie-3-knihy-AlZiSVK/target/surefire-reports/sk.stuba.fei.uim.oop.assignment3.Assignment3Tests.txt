@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.oop.assignment3.Assignment3Tests
+-------------------------------------------------------------------------------
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.916 s - in sk.stuba.fei.uim.oop.assignment3.Assignment3Tests
