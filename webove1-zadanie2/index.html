@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rezervácia termínu</title>
+</head>
+<header>
+    <h1>
+        Športové centrum - rezervačný systém
+    </h1>
+</header>
+<main>
+    <div class="wrapper">
+        <form action="https://form2mail.hynix.sk/form2mail.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="apikey" value="7e5fecac036329f64e164cf8a8fddb45">
+            <input type="hidden" name="from" value="xzichacek@stuba.sk">
+            <!--<input type="hidden" name="to" value="feistu03@gmail.com">-->
+            <input type="hidden" name="to" value="alexander.zichacek@gmail.com">
+            <input type="hidden" name="subject" value="Alexander Zichacek">
+            <input type="hidden" name="redirectOk" value="https://webte1.fei.stuba.sk/~xzichacek/zadanie2/final.html">
+            <input type="hidden" name="redirectFalse" value>
+            <div class="hlavne">
+                <div class="form" id="prve">
+                    <hr class="sep"/>
+                    <h2>Osobné údaje</h2>
+                    <div class="group">
+                        <input type="text" id="nameInput" name="Krstné meno" placeholder="Jožko" maxlength="15"
+                               onblur="requiredName()">
+                        <span class="bar" id="nameBar"></span>
+                        <label for="nameInput">Krstné meno:</label>
+                        <p class="povinne" id="nameP">* povinné</p>
+                    </div>
+                    <div class="group">
+                        <input type="text" id="surnameInput" name="Priezvisko" placeholder="Mrkvička" maxlength="30"
+                               onblur="requiredSurname()">
+                        <span class="bar"></span>
+                        <label for="surnameInput">Priezvisko:</label>
+                        <p class="povinne" id="surnameP">* povinné</p>
+                    </div>
+                    <div class="group">
+                        <input type="date" id="dateInput" name="Dátum narodenia" min="1920-01-01" max="2030-01-01"
+                               onblur="requiredDate()">
+                        <span class="bar"></span>
+                        <label for="dateInput">Dátum narodenia:</label>
+                        <p class="povinne" id="dateP">* povinné</p>
+                    </div>
+                    <div class="group">
+                        <input type="number" id="ageInput" name="Vek" placeholder="18" min="0"
+                               onblur="requiredAge()">
+                        <span class="bar"></span>
+                        <label for="ageInput">Vek:</label>
+                        <p class="povinne" id="ageP">* povinné</p>
+                    </div>
+                    <div>
+                        <select name="Pohlavie" id="genderInput"
+                                onblur="requiredGender()">
+                            <option selected value="">Pohlavie</option>
+                            <option value="Muž">Muž</option>
+                            <option value="Žena">Žena</option>
+                            <option value="Iné">Iné</option>
+                        </select>
+                        <p class="povinne" id="genderP">* povinné</p>
+                    </div>
+                </div>
+
+                <div class="form" id="druhe">
+                    <hr class="sep"/>
+                    <h2>Kontaktné údaje</h2>
+                    <div class="group">
+                        <input type="email" id="emailInput" name="Email" placeholder="jozko.mrkvicka@gmail.com"
+                               maxlength="40" onblur="requiredEmail()">
+                        <span class="bar"></span>
+                        <label for="emailInput">Email:</label>
+                        <p class="povinne" id="emailP">* povinné</p>
+                    </div>
+
+                    <div class="group">
+                        <div class="intl-phone-input">
+                            <div class="container">
+                                <div class="intl-code-select">
+                                    <select class="select-menu" id="phoneNumber">
+                                    </select>
+                                    <div class="select-display">
+                                        &nbsp;
+                                    </div>
+                                </div>
+                                <div class="input-wrap">
+                                    <input class="phone-input" id="phoneId" name="Telefónne číslo" type="tel"
+                                           maxlength="9"
+                                           onkeypress="return onlyNumberKey(event)">
+                                    <span class="bar" id="phoneBar"></span>
+                                    <label for="phoneId" class="phoneLabel">Telefónne číslo:</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form" id="tretie">
+                    <hr class="sep"/>
+                    <h2>Športové aktivity</h2>
+                    <div class="group">
+                        <input type="radio" id="outdoor" onclick="showOutdoor()" name="Typ športu">
+                        <label for="outdoor" class="rBtn">Vonkajšie športy</label>
+
+                        <input type="radio" id="indoor" onclick="showIndoor()" name="Typ športu">
+                        <label for="indoor" class="rBtn">Vnútorné športy</label>
+                    </div>
+                    <div class="group">
+                        <select name="Typ športu" class="threeOptions" id="firstOutdoor">
+                            <option selected value=''>Šport</option>
+                        </select>
+                        <select name="Vybraná výbava" class="threeOptions" id="secondOutdoor">
+                            <option selected value=''>Výbavu</option>
+                        </select>
+                        <select name="Čas" class="threeOptions" id="thirdOutdoor" onchange="sum()">
+                            <option selected value=''>Čas</option>
+                        </select>
+                    </div>
+                    <div class="group">
+                        <select name="Typ športu" class="threeOptions" id="firstIndoor">
+                            <option selected value=''>Šport</option>
+                        </select>
+                        <select name="Vybraná výbava" class="threeOptions" id="secondIndoor">
+                            <option selected value=''>Výbavu</option>
+                        </select>
+                        <select name="Čas" class="threeOptions" id="thirdIndoor" onchange="sum()">
+                            <option selected value=''>Čas</option>
+                        </select>
+                    </div>
+                    <div class="group">
+                        <input type="checkbox" onclick="showArea()" value="true">
+                        <label>Mám špeciálne požiadavky</label>
+                        <textarea name="Špeciálne požiadavky" class="poziadavky" id="poziadavky" rows="4" cols="50"
+                                  placeholder="Špeciálne požiadavky:"></textarea>
+                    </div>
+                    <div class="group">
+                        <label name="Cena" class="cena" id="sum">Cena: </label>
+                    </div>
+                </div>
+
+                <div class="form" id="stvrte">
+                    <hr class="sep"/>
+                    <h2>Termín</h2>
+                    <div class="group">
+                        <input class="next" type="button" id="next" value="Vyber termín" onclick="showTerm()">
+                    </div>
+                    <div class="group">
+                        <input name="Termín" class="term" type="datetime-local" id="inputTerm">
+                        <label class="term" id="labelTerm">Termín:</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-box">
+                <button type="button" class="btn btn-submit" id="myBtn">Odoslať formulár</button>
+            </div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content" id="upperModal">
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-content" id="downerModal">
+                    <p class="modalTitle">Krstné meno</p>
+                    <p id="nameModal"></p>
+                    <p class="modalTitle">Priezvisko</p>
+                    <p id="surnameModal"></p>
+                    <p class="modalTitle">Dátum narodenia</p>
+                    <p id="dateModal"></p>
+                    <p class="modalTitle">Vek</p>
+                    <p id="ageModal"></p>
+                    <p class="modalTitle">Pohlavie</p>
+                    <p id="genderModal"></p>
+                    <p class="modalTitle">E-mail</p>
+                    <p id="emailModal"></p>
+                    <p class="modalTitle">Telefónne číslo</p>
+                    <p id="phoneModal"></p>
+                    <p class="modalTitle">Aktivita / výbava / čas</p>
+                    <p id="activityModal"></p>
+                    <p class="modalTitle">Špeciálne požiadavky</p>
+                    <p id="specialModal">Žiadne</p>
+                    <p class="modalTitle">Termín</p>
+                    <p id="termModal"></p>
+                    <p id="prizeModal"></p>
+                    <div class="btn-box">
+                        <button class="btn btn-submit" type="submit" id="btSubmit">Potvrdiť</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</main>
+<footer>
+    <h3>
+        BigBoySano &COPY;2022
+    </h3>
+</footer>
+</html>

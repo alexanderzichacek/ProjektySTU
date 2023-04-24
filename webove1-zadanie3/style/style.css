@@ -1,0 +1,21 @@
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: black;
+}
+
+#menu {
+    margin-left: 0;
+}
+
+.chart {
+    width: 95%;
+}
+
+#pieChart {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

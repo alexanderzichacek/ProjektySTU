@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "ŠD Mladosť",
+      "name": "mladost.jpg",
+      "description": "Internát Mladosť pre študentov STU",
+      "dateAndTime": "06.09. 1969",
+      "longitude": "17.0640966",
+      "latitude": "48.1589409",
+      "path": "photos/mladost.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Palmyra Club",
+      "name": "palmyra.jpg",
+      "description": "Reštaurácia Palmyra v Mlynskej doline",
+      "dateAndTime": "20.04. 1980",
+      "longitude": "17.0664257",
+      "latitude": "48.1584221",
+      "path": "photos/palmyra.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Študentka",
+      "name": "studentka.jpg",
+      "description": "Horšia, ale dlho otvorená pizzéria",
+      "dateAndTime": "16.05. 1999",
+      "longitude": "17.0645924",
+      "latitude": "48.1590829",
+      "path": "photos/studentka.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Galéria Cubicon",
+      "name": "mladost.jpg",
+      "description": "Obchodné centrum Galéria Cubicon",
+      "dateAndTime": "20.02. 2005",
+      "longitude": "17.0697689",
+      "latitude": "48.1582963",
+      "path": "photos/cubicon.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Sole grill",
+      "name": "sole.jpg",
+      "description": "Medzinárodne známe solečko",
+      "dateAndTime": "19.03. 2005",
+      "longitude": "17.067419",
+      "latitude": "48.1583259",
+      "path": "photos/sole.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Kotolňa PUB",
+      "name": "kotolna.jpg",
+      "description": "Naznámejšia krčma v Bratislave",
+      "dateAndTime": "19.03. 2005",
+      "longitude": "17.0654234",
+      "latitude": "48.1607818",
+      "path": "photos/kotolna.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Estévéčka",
+      "name": "estevecka.jpg",
+      "description": "Burgráreň pri budove RTVS",
+      "dateAndTime": "21.01. 2015",
+      "longitude": "17.0714984",
+      "latitude": "48.1557958",
+      "path": "photos/estevecka.jpg"
+    },
+    {
+      "id": 8,
+      "title": "RTVS",
+      "name": "rtvs.jpg",
+      "description": "Budova slovenskej televízie",
+      "dateAndTime": "22.06. 2017",
+      "longitude": "17.0733024",
+      "latitude": "48.1562799",
+      "path": "photos/rtvs.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Koliba",
+      "name": "koliba.jpg",
+      "description": "Kde mal stretko Kočner a Fico",
+      "dateAndTime": "25.06. 2017",
+      "longitude": "17.0723294",
+      "latitude": "48.1547124",
+      "path": "photos/koliba.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Železná studnička",
+      "name": "studnicka.jpg",
+      "description": "Železná studnička je názov prímestskej rekreačno-oddychovej lokality v Bratislavskom lesnom parku. Nachádza sa v závere Mlynskej doliny, na katastrálnom území mestskej časti Nové Mesto v okrese Bratislava III. Lokalita svoj názov dostala podľa železitej vody, ktorá na tunajšom území pramenila",
+      "dateAndTime": "10.10. 2021",
+      "longitude": "17.0820645",
+      "latitude": "48.1901344",
+      "path": "photos/studnicka.jpg"
+    }
+  ]
+}

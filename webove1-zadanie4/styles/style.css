@@ -1,0 +1,111 @@
+body {
+    overflow-x: hidden;
+    background-color: #ebedef;
+}
+
+.navbar {
+    background-color: #5d50d7;
+}
+
+#menu {
+    margin: 0;
+}
+
+.column img {
+    width: 20rem;
+    height: 20rem;
+    transition: 0.3s;
+    object-fit: cover;
+}
+
+.column img:hover {
+    opacity: 50%;
+    width: 20.2rem;
+    height: 20.2rem;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0.25rem;
+}
+
+.column {
+    flex: 25%;
+    padding: 0 0.25rem;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 102rem;
+}
+
+.center {
+    padding: 5rem 5rem 5rem 5rem;
+}
+
+.btn-outline-success {
+    color: #5d50d7;
+    border: 1px solid #5d50d7;
+    --bs-btn-hover-bg: #5d50d7;
+}
+
+@media only screen and (max-width: 420px) {
+    .column img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .column img:hover {
+        width: 15.2rem;
+        height: 15.2rem;
+    }
+}
+
+.modal-header {
+    justify-content: flex-end;
+}
+
+.modal-footer {
+    justify-content: space-between;
+}
+
+#map {
+    height: 800px;
+    width: 80%;
+}
+
+#mapFooter {
+    justify-content: flex-end;
+}
+
+.trace {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+#traceButtonCar {
+    width: 20%;
+    margin: 0 1rem;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

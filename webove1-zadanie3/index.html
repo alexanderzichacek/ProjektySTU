@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container" id="menu">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#n_bar"
+                    aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="n_bar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Graf výsledkov študentov</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/graph.html">Graf podľa údajov</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="chart">
+        <div id="myBarChart"></div>
+    </div>
+    <div class="chart" id="pieChart">
+        <div id="myPieChart"></div>
+    </div>
+    <div class="chart">
+        <div id="myLineChart"></div>
+    </div>
+</main>
+<script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+<script src="script/jquery-3.6.1.min.js"></script>
+<script src="script/charts.js"></script>
+<!--<script src="script/bar.js"></script>-->
+<!--<script src="script/pie.js"></script>-->
+<!--<script src="script/line.js"></script>-->
+</body>
+</html>
