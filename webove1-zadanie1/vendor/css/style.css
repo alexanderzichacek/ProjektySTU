@@ -1,0 +1,835 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-bottom: 1.5rem;
+}
+
+header {
+    background: mediumslateblue;
+    color: white;
+}
+
+h2 {
+    padding-left: 0.5rem;
+}
+
+footer {
+    position: fixed;
+    padding: 0px 5px 0px 0px;
+    bottom: 0;
+    width: 100%;
+    height: 1.5rem;
+    background: mediumslateblue;
+    color: white;
+    text-align: end;
+}
+
+article {
+    text-align: justify;
+    padding-left: 0%;
+    padding-right: 3%;
+}
+
+section {
+    border: 3px solid royalblue;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+img {
+    padding-left: 0%;
+    margin-right: 1%;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    border: 1px solid;
+    padding: 0;
+    text-align: left;
+    background: black;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li:hover {
+    background-color: gray;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+table {
+    display: flex;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+    padding-top: 0.1rem;
+    padding-left: 0.5rem;
+}
+
+table td {
+    border: 1px solid black;
+    height: 10%;
+    width: 7rem;
+    text-align: center;
+}
+
+table td.shrink {
+    white-space: nowrap
+}
+
+table td.expand {
+    width: 99%
+}
+
+tr:nth-of-type(odd) {
+    background-color: lightgray;
+}
+
+.list {
+    padding-left: 2rem;
+}
+
+.prednaska {
+    background-color: limegreen;
+}
+
+.cvicenie {
+    background-color: aqua;
+}
+
+.telesna {
+    background-color: orangered;
+}
+
+.hlavicka {
+    background-color: grey;
+}
+
+.motto {
+    float: right;
+    font-weight: bold;
+    font-size: 190%;
+    padding-left: 1%;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 145%;
+}
+
+.podnadpis {
+    font-weight: bold;
+    font-size: 115%;
+}
+
+.oblievanie {
+    float: left;
+}
+
+.omne {
+    margin-top: 4%;
+    margin-left: 0.2%;
+}
+
+.vlavo {
+    background-color: mediumslateblue;
+    padding: 0rem 0.2rem 0rem 0.2rem;
+    margin: 0rem 0.2rem 0rem 0.5rem;
+    flex: 1;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.vpravo {
+    color: white;
+    background-color: royalblue;
+    padding: 0rem 0.2rem 0rem 0.2rem;
+    margin: 0rem 0.5rem 0rem 0rem;
+    flex: 2;
+    border-radius: 10px;
+}
+
+.vpravo p {
+    margin-top: 0.1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.vlavo .udaje {
+    color: white;
+    text-decoration: none;
+}
+
+.jeden {
+    float: left;
+    text-align: left;
+}
+
+.dva {
+    float: right;
+    text-align: right;
+}
+
+.skusenosti {
+    width: 18rem;
+}
+
+.linkNaObrazok {
+    font-size: 50%;
+    color: black;
+    text-decoration: none;
+    margin-left: 50%;
+}
+
+.relativediv {
+    position: relative;
+    overflow: hidden;
+}
+
+.imagediv {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.pin {
+    background-color: royalblue;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.tooltip {
+    background-color: mediumslateblue;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 90%;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.tooltip h2 {
+    text-align: center;
+}
+
+.pin:hover > .tooltip {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+}
+
+#pin1 {
+    position: absolute;
+    bottom: 30%;
+    left: 12.5%;
+}
+
+#pin2 {
+    position: absolute;
+    bottom: 25%;
+    left: 19.5%;
+}
+
+#pin3 {
+    position: absolute;
+    bottom: 18%;
+    left: 32%;
+}
+
+#pin4 {
+    position: absolute;
+    bottom: 18%;
+    left: 52.5%;
+}
+
+#pin5 {
+    position: absolute;
+    bottom: 23%;
+    left: 70.5%;
+}
+
+#pin6 {
+    position: absolute;
+    bottom: 26.5%;
+    left: 81.5%;
+}
+
+#renault {
+    height: auto;
+    width: 1880%;
+    bottom: 790%;
+    left: -110%;
+}
+
+#ferrari {
+    height: auto;
+    width: 1480%;
+    bottom: 890%;
+    left: -90%;
+}
+
+#porsche {
+    height: auto;
+    width: 1580%;
+    bottom: 1170%;
+    left: -190%;
+}
+
+#lamborghini {
+    height: auto;
+    width: 1560%;
+    bottom: 1120%;
+    left: -720%;
+}
+
+#corvette {
+    height: auto;
+    width: 1540%;
+    bottom: 950%;
+    left: -1320%;
+}
+
+#mercedes {
+    height: auto;
+    width: 2430%;
+    bottom: 870%;
+    left: -1910%;
+}
+
+#content {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+}
+
+#omne {
+    width: 19%;
+    height: auto;
+    border: 3px solid royalblue;
+    border-radius: 10px;
+}
+
+#cv {
+    width: 50%;
+    height: auto;
+    margin-top: 0.2rem;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: bon;
+    src: url(../../BonvenoCF-Light.otf);
+}
+
+@media screen and (max-width: 1440px) {
+    #renault {
+        height: auto;
+        width: 1880%;
+        bottom: 600%;
+        left: -110%;
+    }
+
+    #ferrari {
+        height: auto;
+        width: 1480%;
+        bottom: 680%;
+        left: -90%;
+    }
+
+    #porsche {
+        height: auto;
+        width: 1580%;
+        bottom: 830%;
+        left: -190%;
+    }
+
+    #lamborghini {
+        height: auto;
+        width: 1560%;
+        bottom: 830%;
+        left: -720%;
+    }
+
+    #corvette {
+        height: auto;
+        width: 1540%;
+        bottom: 680%;
+        left: -1320%;
+    }
+
+    #mercedes {
+        height: auto;
+        width: 2430%;
+        bottom: 600%;
+        left: -1910%;
+    }
+}
+
+@media screen and (max-width: 1325px) {
+    #renault {
+        height: auto;
+        width: 1880%;
+        bottom: 550%;
+        left: -110%;
+    }
+
+    #ferrari {
+        height: auto;
+        width: 1480%;
+        bottom: 620%;
+        left: -90%;
+    }
+
+    #porsche {
+        height: auto;
+        width: 1580%;
+        bottom: 760%;
+        left: -190%;
+    }
+
+    #lamborghini {
+        height: auto;
+        width: 1560%;
+        bottom: 760%;
+        left: -720%;
+    }
+
+    #corvette {
+        height: auto;
+        width: 1540%;
+        bottom: 620%;
+        left: -1320%;
+    }
+
+    #mercedes {
+        height: auto;
+        width: 2430%;
+        bottom: 550%;
+        left: -1950%;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    #renault {
+        height: auto;
+        width: 2240%;
+        bottom: 490%;
+        left: -110%;
+    }
+
+    #ferrari {
+        height: auto;
+        width: 1480%;
+        bottom: 590%;
+        left: -90%;
+    }
+
+    #porsche {
+        height: auto;
+        width: 1580%;
+        bottom: 730%;
+        left: -190%;
+    }
+
+    #lamborghini {
+        height: auto;
+        width: 1560%;
+        bottom: 730%;
+        left: -720%;
+    }
+
+    #corvette {
+        height: auto;
+        width: 1540%;
+        bottom: 590%;
+        left: -1320%;
+    }
+
+    #mercedes {
+        height: auto;
+        width: 2450%;
+        bottom: 490%;
+        left: -1990%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .pin {
+        height: 1rem;
+        width: 1rem;
+    }
+
+    #renault {
+        height: auto;
+        width: 3070%;
+        bottom: 430%;
+        left: -110%;
+        font-size: 70%;
+    }
+
+    #ferrari {
+        height: auto;
+        width: 2710%;
+        bottom: 420%;
+        left: -610%;
+        font-size: 70%;
+    }
+
+    #porsche {
+        height: auto;
+        width: 2420%;
+        bottom: 390%;
+        left: -810%;
+        font-size: 70%;
+    }
+
+    #lamborghini {
+        height: auto;
+        width: 2580%;
+        bottom: 390%;
+        left: -1220%;
+        font-size: 70%;
+    }
+
+    #corvette {
+        height: auto;
+        width: 2290%;
+        bottom: 420%;
+        left: -1370%;
+        font-size: 70%;
+    }
+
+    #mercedes {
+        height: auto;
+        width: 3560%;
+        bottom: 430%;
+        left: -3020%;
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #renault {
+        height: auto;
+        width: 3070%;
+        bottom: 320%;
+        left: -70%;
+        font-size: 50%;
+    }
+
+    #ferrari {
+        height: auto;
+        width: 1670%;
+        bottom: 430%;
+        left: -280%;
+        font-size: 50%;
+    }
+
+    #porsche {
+        height: auto;
+        width: 1590%;
+        bottom: 500%;
+        left: -420%;
+        font-size: 50%;
+    }
+
+    #lamborghini {
+        height: auto;
+        width: 1660%;
+        bottom: 500%;
+        left: -780%;
+        font-size: 50%;
+    }
+
+    #corvette {
+        height: auto;
+        width: 1640%;
+        bottom: 430%;
+        left: -1080%;
+        font-size: 50%;
+    }
+
+    #mercedes {
+        height: auto;
+        width: 2650%;
+        bottom: 320%;
+        left: -2250%;
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #renault {
+        height: auto;
+        width: 3070%;
+        bottom: 180%;
+        left: -30%;
+        font-size: 37%;
+    }
+
+    #ferrari {
+        height: auto;
+        width: 2500%;
+        bottom: 250%;
+        left: -240%;
+        font-size: 37%;
+    }
+
+    #porsche {
+        height: auto;
+        width: 2370%;
+        bottom: 430%;
+        left: -540%;
+        font-size: 37%;
+    }
+
+    #lamborghini {
+        height: auto;
+        width: 2230%;
+        bottom: 430%;
+        left: -1120%;
+        font-size: 37%;
+    }
+
+    #corvette {
+        height: auto;
+        width: 1630%;
+        bottom: 250%;
+        left: -1120%;
+        font-size: 37%;
+    }
+
+    #mercedes {
+        height: auto;
+        width: 2430%;
+        bottom: 180%;
+        left: -2160%;
+        font-size: 37%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #renault {
+        height: auto;
+        width: 2370%;
+        bottom: 180%;
+        left: -30%;
+        font-size: 37%;
+    }
+
+    #ferrari {
+        height: auto;
+        width: 1480%;
+        bottom: 300%;
+        left: -90%;
+        font-size: 37%;
+    }
+
+    #porsche {
+        height: auto;
+        width: 1580%;
+        bottom: 400%;
+        left: -190%;
+        font-size: 37%;
+    }
+
+    #lamborghini {
+        height: auto;
+        width: 1560%;
+        bottom: 400%;
+        left: -720%;
+        font-size: 37%;
+    }
+
+    #corvette {
+        height: auto;
+        width: 1540%;
+        bottom: 300%;
+        left: -1320%;
+        font-size: 37%;
+    }
+
+    #mercedes {
+        height: auto;
+        width: 2430%;
+        bottom: 180%;
+        left: -2160%;
+        font-size: 37%;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    h1 {
+        font-size: 150%;
+    }
+
+    nav ul li a {
+        font-size: 20%;
+        padding: 5px;
+    }
+
+    .pin {
+        height: 0.5rem;
+        width: 0.5rem;
+    }
+
+    #renault {
+        height: auto;
+        width: 5000%;
+        bottom: 420%;
+        left: -130%;
+        font-size: 37%;
+    }
+
+    #ferrari {
+        height: auto;
+        width: 4720%;
+        bottom: 400%;
+        left: -90%;
+        font-size: 37%;
+    }
+
+    #porsche {
+        height: auto;
+        width: 4250%;
+        bottom: 360%;
+        left: -1090%;
+        font-size: 37%;
+    }
+
+    #lamborghini {
+        height: auto;
+        width: 4280%;
+        bottom: 360%;
+        left: -2560%;
+        font-size: 37%;
+    }
+
+    #corvette {
+        height: auto;
+        width: 2910%;
+        bottom: 400%;
+        left: -1670%;
+        font-size: 37%;
+    }
+
+    #mercedes {
+        height: auto;
+        width: 5550%;
+        bottom: 420%;
+        left: -5060%;
+        font-size: 37%;
+    }
+
+    #omne {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    h1 {
+        font-size: 120%;
+    }
+
+    nav ul li a {
+        font-size: 10%;
+        padding: 3px;
+    }
+
+    #renault {
+        height: auto;
+        width: 5000%;
+        bottom: 420%;
+        left: -130%;
+        font-size: 37%;
+    }
+
+    #ferrari {
+        height: auto;
+        width: 4400%;
+        bottom: 250%;
+        left: -130%;
+        font-size: 37%;
+    }
+
+    #porsche {
+        height: auto;
+        width: 3780%;
+        bottom: 340%;
+        left: -890%;
+        font-size: 37%;
+    }
+
+    #lamborghini {
+        height: auto;
+        width: 3280%;
+        bottom: 340%;
+        left: -1910%;
+        font-size: 37%;
+    }
+
+    #corvette {
+        height: auto;
+        width: 2620%;
+        bottom: 250%;
+        left: -2120%;
+        font-size: 37%;
+    }
+
+    #mercedes {
+        height: auto;
+        width: 5130%;
+        bottom: 420%;
+        left: -4650%;
+        font-size: 37%;
+    }
+
+    #omne {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    .vlavo {
+        font-size: 80%;
+    }
+
+    .vpravo {
+        font-size: 80%;
+    }
+
+    .skusenosti {
+        font-size: 60%;
+        width: 9rem;
+    }
+
+    .bolt {
+        font-size: 13px;
+    }
+}
